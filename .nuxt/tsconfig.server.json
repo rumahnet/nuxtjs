@@ -1,0 +1,333 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "./types/nitro-imports"
+      ],
+      "~/*": [
+        "../*"
+      ],
+      "@/*": [
+        "../*"
+      ],
+      "~~/*": [
+        "../*"
+      ],
+      "@@/*": [
+        "../*"
+      ],
+      "nitropack/types": [
+        "../node_modules/.pnpm/nitropack@2.12.9_encoding@0.1.13/node_modules/nitropack/types"
+      ],
+      "nitropack/runtime": [
+        "../node_modules/.pnpm/nitropack@2.12.9_encoding@0.1.13/node_modules/nitropack/runtime"
+      ],
+      "nitropack": [
+        "../node_modules/.pnpm/nitropack@2.12.9_encoding@0.1.13/node_modules/nitropack"
+      ],
+      "defu": [
+        "../node_modules/.pnpm/defu@6.1.4/node_modules/defu"
+      ],
+      "h3": [
+        "../node_modules/.pnpm/h3@1.15.4/node_modules/h3"
+      ],
+      "consola": [
+        "../node_modules/.pnpm/consola@3.4.2/node_modules/consola"
+      ],
+      "ofetch": [
+        "../node_modules/.pnpm/ofetch@1.5.1/node_modules/ofetch"
+      ],
+      "@unhead/vue": [
+        "../node_modules/.pnpm/@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3_/node_modules/@unhead/vue"
+      ],
+      "vue": [
+        "../node_modules/.pnpm/vue@3.5.24_typescript@5.9.3/node_modules/vue"
+      ],
+      "@vue/runtime-core": [
+        "../node_modules/.pnpm/@vue+runtime-core@3.5.24/node_modules/@vue/runtime-core"
+      ],
+      "@vue/compiler-sfc": [
+        "../node_modules/.pnpm/@vue+compiler-sfc@3.5.24/node_modules/@vue/compiler-sfc"
+      ],
+      "vue-router": [
+        "../node_modules/.pnpm/vue-router@4.6.3_vue@3.5.24_typescript@5.9.3_/node_modules/vue-router"
+      ],
+      "vue-router/auto-routes": [
+        "../node_modules/.pnpm/vue-router@4.6.3_vue@3.5.24_typescript@5.9.3_/node_modules/vue-router/vue-router-auto-routes"
+      ],
+      "unplugin-vue-router/client": [
+        "../node_modules/.pnpm/unplugin-vue-router@0.16.1_@vue+compiler-sfc@3.5.24_typescript@5.9.3_vue-router@4.6.3_v_2f6d45fa3cc844a628a629339876ec3d/node_modules/unplugin-vue-router/client"
+      ],
+      "@nuxt/schema": [
+        "../node_modules/.pnpm/@nuxt+schema@3.20.1/node_modules/@nuxt/schema"
+      ],
+      "nuxt": [
+        "../node_modules/.pnpm/nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10.1_@vue+compiler-sfc@3.5.24_db0@0.3._b5c6af8f109483f88e7516349693bf5a/node_modules/nuxt"
+      ],
+      "vite/client": [
+        "../node_modules/.pnpm/vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1.30.2_terser@5.44.1_yaml@2.8.1/node_modules/vite/client"
+      ],
+      "@nuxtjs/robots": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots"
+      ],
+      "@nuxtjs/sitemap": [
+        "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/@nuxtjs/sitemap"
+      ],
+      "nuxt-link-checker": [
+        "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/nuxt-link-checker"
+      ],
+      "nuxt-og-image": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image"
+      ],
+      "nuxt-schema-org": [
+        "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/nuxt-schema-org"
+      ],
+      "nuxt-seo-utils": [
+        "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-seo-utils"
+      ],
+      "nuxt-site-config": [
+        "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config"
+      ],
+      "#shared": [
+        "../shared"
+      ],
+      "#shared/*": [
+        "../shared/*"
+      ],
+      "assets": [
+        "../assets"
+      ],
+      "assets/*": [
+        "../assets/*"
+      ],
+      "public": [
+        "../public"
+      ],
+      "public/*": [
+        "../public/*"
+      ],
+      "#build": [
+        "./"
+      ],
+      "#build/*": [
+        "./*"
+      ],
+      "#internal/nuxt/paths": [
+        "../node_modules/.pnpm/@nuxt+nitro-server@3.20.1_db0@0.3.4_encoding@0.1.13_ioredis@5.8.2_magicast@0.5.1_nuxt@3_6f98a0fff0f19e8af391b0c38440b4a8/node_modules/@nuxt/nitro-server/dist/runtime/utils/paths"
+      ],
+      "#ui": [
+        "../node_modules/.pnpm/@nuxt+ui@2.11.1_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_d5b464d7c9a9fb60c4224c8539aeccd0/node_modules/@nuxt/ui/dist/runtime"
+      ],
+      "#ui/*": [
+        "../node_modules/.pnpm/@nuxt+ui@2.11.1_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_d5b464d7c9a9fb60c4224c8539aeccd0/node_modules/@nuxt/ui/dist/runtime/*"
+      ],
+      "#ui-colors": [
+        "./ui.colors"
+      ],
+      "#icon-collections": [
+        "./icon-collections"
+      ],
+      "#color-mode-options": [
+        "./color-mode-options.mjs"
+      ],
+      "#mdc-configs": [
+        "./mdc-configs"
+      ],
+      "#mdc-highlighter": [
+        "./mdc-highlighter"
+      ],
+      "#mdc-imports": [
+        "./mdc-imports"
+      ],
+      "#unhead/composables": [
+        "../node_modules/.pnpm/nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10.1_@vue+compiler-sfc@3.5.24_db0@0.3._b5c6af8f109483f88e7516349693bf5a/node_modules/nuxt/dist/head/runtime/composables/v3"
+      ],
+      "#site-config": [
+        "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime"
+      ],
+      "#site-config/*": [
+        "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/*"
+      ],
+      "#robots": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime"
+      ],
+      "#robots/*": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime/*"
+      ],
+      "#sitemap": [
+        "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/@nuxtjs/sitemap/dist/runtime"
+      ],
+      "#sitemap/*": [
+        "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/@nuxtjs/sitemap/dist/runtime/*"
+      ],
+      "#link-checker": [
+        "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/nuxt-link-checker/dist/runtime"
+      ],
+      "#link-checker/*": [
+        "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/nuxt-link-checker/dist/runtime/*"
+      ],
+      "#og-image": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime"
+      ],
+      "#og-image/*": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/*"
+      ],
+      "#og-image-cache": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/cache/lru"
+      ],
+      "#nuxt-og-image-utils": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/shared"
+      ],
+      "#schema-org": [
+        "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/nuxt-schema-org/dist/runtime"
+      ],
+      "#schema-org/*": [
+        "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/nuxt-schema-org/dist/runtime/*"
+      ],
+      "#seo-utils": [
+        "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-seo-utils/dist/runtime"
+      ],
+      "#seo-utils/*": [
+        "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-seo-utils/dist/runtime/*"
+      ],
+      "#tailwind-config": [
+        "./tailwind/expose"
+      ],
+      "#tailwind-config/*": [
+        "./tailwind/expose/*"
+      ],
+      "#internal/nuxt-site-config": [
+        "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/server/composable-barrel-deprecated"
+      ],
+      "#internal/nuxt-simple-robots": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables"
+      ],
+      "#internal/nuxt-simple-robots/*": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/*"
+      ],
+      "#internal/nuxt-robots": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables"
+      ],
+      "#internal/nuxt-robots/*": [
+        "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/dist/runtime/server/composables/*"
+      ],
+      "#link-checker/content-provider": [
+        "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/nuxt-link-checker/dist/runtime/server/providers/content-v2"
+      ],
+      "#content/server": [
+        "../node_modules/.pnpm/@nuxt+content@2.13.4_db0@0.3.4_ioredis@5.8.2_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher_e2feb6ea5c5477d87ea0e59a738c297d/node_modules/@nuxt/content/dist/runtime/legacy/server"
+      ],
+      "#og-image/renderers/satori": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/satori/renderer"
+      ],
+      "#og-image/renderers/chromium": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/chromium/renderer"
+      ],
+      "#og-image/bindings/css-inline": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/mock/empty"
+      ],
+      "#og-image/bindings/sharp": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/bindings/sharp/node"
+      ],
+      "#og-image/bindings/resvg": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/bindings/resvg/node"
+      ],
+      "#og-image/bindings/satori": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/bindings/satori/node"
+      ],
+      "#og-image/bindings/chromium": [
+        "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/dist/runtime/server/og-image/bindings/chromium/on-demand"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "webworker",
+      "dom.iterable"
+    ]
+  },
+  "include": [
+    "./types/nitro-nuxt.d.ts",
+    "../node_modules/.pnpm/nuxt-icon@0.6.7_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_b27dc71c65017548aaba20259f73da3f/node_modules/runtime/server",
+    "../node_modules/.pnpm/nuxt-icon@0.6.7_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_b27dc71c65017548aaba20259f73da3f/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+tailwindcss@6.14.0_magicast@0.5.1_yaml@2.8.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+tailwindcss@6.14.0_magicast@0.5.1_yaml@2.8.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxt+ui@2.11.1_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_d5b464d7c9a9fb60c4224c8539aeccd0/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxt+ui@2.11.1_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_d5b464d7c9a9fb60c4224c8539aeccd0/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+google-fonts@3.1.1_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+google-fonts@3.1.1_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+fontaine@0.4.4_encoding@0.1.13_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+fontaine@0.4.4_encoding@0.1.13_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+mdc@0.9.5_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+mdc@0.9.5_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxt+content@2.13.4_db0@0.3.4_ioredis@5.8.2_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher_e2feb6ea5c5477d87ea0e59a738c297d/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxt+content@2.13.4_db0@0.3.4_ioredis@5.8.2_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher_e2feb6ea5c5477d87ea0e59a738c297d/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+seo@3.2.2_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___db0@0.3.4_h3@1.15.4__2671955dc1f1e266f8439885495b373f/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+seo@3.2.2_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___db0@0.3.4_h3@1.15.4__2671955dc1f1e266f8439885495b373f/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxthq+studio@1.0.6_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxthq+studio@1.0.6_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@vueuse+nuxt@11.3.0_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10._46d5823416422c7f8583af20ab44f57c/node_modules/runtime/server",
+    "../node_modules/.pnpm/@vueuse+nuxt@11.3.0_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10._46d5823416422c7f8583af20ab44f57c/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxt+devtools@1.0.5_encoding@0.1.13_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.1_5fb832555de8cb2b9a46a4cbd700a527/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxt+devtools@1.0.5_encoding@0.1.13_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.1_5fb832555de8cb2b9a46a4cbd700a527/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.5.1/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.5.1/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/dist/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/runtime/server",
+    "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/runtime/server",
+    "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/runtime/server",
+    "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/runtime/server",
+    "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/dist/runtime/server",
+    "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/runtime/server",
+    "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/dist/runtime/server",
+    "../shared/**/*.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../node_modules/.pnpm/nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10.1_@vue+compiler-sfc@3.5.24_db0@0.3._b5c6af8f109483f88e7516349693bf5a/node_modules/nuxt/node_modules",
+    "../node_modules/.pnpm/nuxt-icon@0.6.7_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_b27dc71c65017548aaba20259f73da3f/node_modules/nuxt-icon/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2_magicast@0.5.1/node_modules/@nuxtjs/color-mode/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+tailwindcss@6.14.0_magicast@0.5.1_yaml@2.8.1/node_modules/@nuxtjs/tailwindcss/node_modules",
+    "../node_modules/.pnpm/@nuxt+ui@2.11.1_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6.1_lightningcss@1_d5b464d7c9a9fb60c4224c8539aeccd0/node_modules/@nuxt/ui/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+google-fonts@3.1.1_magicast@0.5.1/node_modules/@nuxtjs/google-fonts/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+fontaine@0.4.4_encoding@0.1.13_magicast@0.5.1/node_modules/@nuxtjs/fontaine/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+mdc@0.9.5_magicast@0.5.1/node_modules/@nuxtjs/mdc/node_modules",
+    "../node_modules/.pnpm/@nuxt+content@2.13.4_db0@0.3.4_ioredis@5.8.2_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher_e2feb6ea5c5477d87ea0e59a738c297d/node_modules/@nuxt/content/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+seo@3.2.2_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___db0@0.3.4_h3@1.15.4__2671955dc1f1e266f8439885495b373f/node_modules/@nuxtjs/seo/node_modules",
+    "../node_modules/.pnpm/@nuxthq+studio@1.0.6_magicast@0.5.1/node_modules/@nuxthq/studio/node_modules",
+    "../node_modules/.pnpm/@vueuse+nuxt@11.3.0_magicast@0.5.1_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.10._46d5823416422c7f8583af20ab44f57c/node_modules/@vueuse/nuxt/node_modules",
+    "../node_modules/.pnpm/@nuxt+devtools@1.0.5_encoding@0.1.13_nuxt@3.20.1_@parcel+watcher@2.5.1_@types+node@24.1_5fb832555de8cb2b9a46a4cbd700a527/node_modules/@nuxt/devtools/node_modules",
+    "../node_modules/.pnpm/@nuxt+telemetry@2.6.6_magicast@0.5.1/node_modules/@nuxt/telemetry/node_modules",
+    "../node_modules/.pnpm/nuxt-site-config@3.2.11_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-site-config/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+robots@5.5.6_h3@1.15.4_magicast@0.5.1_vue@3.5.24_typescript@5.9.3_/node_modules/@nuxtjs/robots/node_modules",
+    "../node_modules/.pnpm/@nuxtjs+sitemap@7.4.7_h3@1.15.4_magicast@0.5.1_vite@7.2.2_@types+node@24.10.1_jiti@2.6._26ae4d3e07f5eabb14457504a2a7d732/node_modules/@nuxtjs/sitemap/node_modules",
+    "../node_modules/.pnpm/nuxt-link-checker@4.3.6_db0@0.3.4_h3@1.15.4_ioredis@5.8.2_magicast@0.5.1_vite@7.2.2_@ty_6a1af5f5dcbb3850ec05a068cd3039a6/node_modules/nuxt-link-checker/node_modules",
+    "../node_modules/.pnpm/nuxt-og-image@5.1.12_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magicas_ca512f5576cf437f35995b3adf825a2b/node_modules/nuxt-og-image/node_modules",
+    "../node_modules/.pnpm/nuxt-schema-org@5.0.9_@unhead+vue@2.0.19_vue@3.5.24_typescript@5.9.3___h3@1.15.4_magica_41b060ef88436e380c94f1795829b7d5/node_modules/nuxt-schema-org/node_modules",
+    "../node_modules/.pnpm/nuxt-seo-utils@7.0.18_h3@1.15.4_magicast@0.5.1_rollup@4.53.2_vue@3.5.24_typescript@5.9.3_/node_modules/nuxt-seo-utils/node_modules",
+    "../dist"
+  ]
+}

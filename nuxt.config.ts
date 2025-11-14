@@ -1,24 +1,27 @@
 const SITE_URL = process.env.NUXT_PUBLIC_SITE_URL || 'https://penyadap.pages.dev';
+const PORT = Number(process.env.PORT ?? 5000);
+const REPL_HOST = process.env.REPL_SLUG && process.env.REPL_OWNER 
+  ? `${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co` 
+  : 'localhost';
 
 export default defineNuxtConfig({
   devtools: { enabled: process.env.NODE_ENV === 'development' },
   css: ['~/assets/css/tailwind.css'],
+  devServer: {
+    host: '0.0.0.0',
+    port: PORT,
+    url: `http://0.0.0.0:${PORT}`
+  },
   nitro: {
     compatibilityDate: '2025-11-08',
-    // Optimize untuk Cloudflare Pages
-    preset: 'cloudflare-pages',
-    // Exclude dependencies yang tidak perlu di bundle
+    preset: process.env.NODE_ENV === 'production' ? 'cloudflare-pages' : undefined,
     externals: {
-      // Exclude native dependencies yang besar
       inline: ['sharp', '@parcel/watcher']
     },
-    // Minify output
     minify: true,
-    // Prerender routes untuk mengurangi bundle
     prerender: {
       crawlLinks: true
     },
-    // Reduce bundle size dengan tree-shaking
     esbuild: {
       options: {
         treeShaking: true
@@ -32,7 +35,6 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "@nuxt/content",
     "@nuxtjs/seo",
-    // Hanya load @nuxthq/studio di development
     ...(process.env.NODE_ENV === 'development' ? ["@nuxthq/studio"] : []),
     "@vueuse/nuxt"
   ],
@@ -74,9 +76,7 @@ export default defineNuxtConfig({
       bodyAttrs: {
         class: "antialiased bg-gray-50 dark:bg-black min-h-screen",
       },
-      meta: [
-        // Meta tag global - akan di-override oleh defineSeoMeta di setiap halaman
-      ],
+      meta: [],
       link: [
         { rel: "icon", type: "image/png", href: "/favicon-96x96.png", sizes: "96x96" },
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
@@ -104,20 +104,24 @@ export default defineNuxtConfig({
   },
   vite: {
     server: {
+      host: '0.0.0.0',
+      port: PORT,
+      strictPort: false,
+      allowedHosts: true,
       hmr: {
-        clientPort: 24678,
-        port: 24678
+        protocol: 'wss',
+        clientPort: 443,
+        port: 24678,
+        host: REPL_HOST
       },
       watch: {
         usePolling: true
       }
     },
     build: {
-      // Optimize chunk size
       chunkSizeWarningLimit: 1000,
       rollupOptions: {
         output: {
-          // Manual chunk splitting untuk mengurangi ukuran
           manualChunks: {
             'vendor': ['vue', 'vue-router'],
           }
@@ -125,7 +129,6 @@ export default defineNuxtConfig({
       }
     }
   },
-  // Experimental features untuk mengurangi bundle size
   experimental: {
     payloadExtraction: false
   }
